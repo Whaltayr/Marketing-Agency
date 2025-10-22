@@ -44,14 +44,19 @@
   --font-title: Nunito;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /* make widths include padding/borders — evita overflows inesperados */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
-    padding: 0;
+  padding: 0;
 }
-html { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 body {
   font-family: var(--font-text);
 }
@@ -92,11 +97,11 @@ body {
 }
 .navbar-container .navbar-menu li a {
   text-decoration: none;
-  
+
   color: var(--cl1);
   font-weight: 500;
   transition: color 0.3s ease;
-   font-size: clamp(0.95rem, 1.2vw + 0.4rem, 1.125rem);
+  font-size: clamp(0.95rem, 1.2vw + 0.4rem, 1.125rem);
   letter-spacing: 0.2px;
 }
 .navbar-toggle {
@@ -120,7 +125,7 @@ body {
   letter-spacing: 1px;
   background-image: linear-gradient(60deg, #ccccff, #fae6fa);
   padding: var(--size-10) var(--size-20);
-  border: solid 2px hsl(0, 0%, 21%) ;
+  border: solid 2px hsl(0, 0%, 21%);
   border-radius: 40px;
 }
 @media (max-width: 800px) {
@@ -159,15 +164,18 @@ body {
   }
 }
 @media (width<480px) {
-    .navbar-container{
-        padding: 0 var(--gap1);
-    }
-    .navbar .logo{
-        font-size: 1.5rem;
-    }
-    .navbar-container .navbar-menu li a{
-        font-size: 1rem;
-    }
+  .navbar-container {
+    padding: 0 var(--gap1);
+  }
+  .navbar .logo {
+    font-size: 1.5rem;
+  }
+  .navbar-container .navbar-menu li a {
+    font-size: 1rem;
+  }
+  .advantages-image{
+    display: none;
+  }
 }
 .hero {
   padding: var(--gap2);
@@ -196,7 +204,7 @@ body {
 .hero-content > h2 {
   text-align: start;
   font-weight: 400;
-    font-size: clamp(1rem, 1.6vw, 1.3rem);
+  font-size: clamp(1rem, 1.6vw, 1.3rem);
   line-height: 1.6;
   color: var(--clr8);
 }
@@ -252,32 +260,48 @@ body {
 .hero-image img {
   max-height: 28rem;
 }
-.advantages {
-  height: 100vh;
-  height: 100dvh;
+.container .partners-title{
+    font-family: var(--font-title, "Montserrat", sans-serif);
+    font-weight: 700;
+    font-size: clamp(1.2rem, 12vw, 3.65rem);
+    text-align: center;
+    margin-bottom: 1.4rem;
+    color: var(--cl1);
 }
+.advantages {
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: var(--gap2);
+  background-color: #f2f2f2;
+}
+
 .advantages-wrapper {
-  background-image: url(assets/img/img1.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: var(--size-16);
   padding: var(--size-20);
   display: flex;
   flex-wrap: wrap;
-  gap: var(--gap2);
+  gap: var(--gap5);
   min-width: 80%;
-  height: 30rem;
   justify-content: center;
   align-items: flex-end;
   margin: 0 auto;
-  border: solid 1px rgba(61, 61, 61, 0.267);
+}
+.advantage-area {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap2);
+  align-items: center;
+  justify-content: center;
+}
+.advantages-image {
+  max-height: 300px;
+  transform: rotate(-10deg);
+  border-radius: var(--size-16);
 }
 @media (width<750px) {
- .hero-content {
-  max-width: 100%;
-}
-    .hero-image {
+  .hero-content {
+    max-width: 100%;
+  }
+  .hero-image {
     display: none;
   }
   .hero-content > h1 {
@@ -291,13 +315,12 @@ body {
   margin-bottom: var(--size-10);
 }
 .advantages-tit {
-  font-size: var(--size-32);
-  height: fit-content;
-  padding: var(--size-20);
-  max-width: 20rem;
-  border-radius: var(--size-16);
-  border: 1px solid hsl(0, 0%, 21%);
-  background: #ffffef;
+  font-family: var(--font-title);
+  font-size: clamp(var(--size-28), 8vw, var(--size-3r));
+  font-weight: 400;
+  text-align: start;
+  line-height: 1;
+  letter-spacing: -1px;
 }
 .card-advantage {
   height: fit-content;
@@ -305,7 +328,8 @@ body {
   max-width: 20rem;
   border-radius: var(--size-16);
   border: 1px solid hsl(0, 0%, 21%);
-  background: #ffffef; /* box-shadow: -15px 15px 29px #c3c3c3, 15px -15px 29px #fdfdfd; */
+  background: #f5f5f5;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 .card-advantage img {
   height: 40px;
@@ -315,7 +339,7 @@ body {
 }
 .services-title {
   font-family: var(--font-title);
-  font-size: clamp(var(--size-28), 8vw, var(--size-3r));
+  font-size: clamp(var(--size-28), 8vw, 6rem);
   font-weight: 400;
   text-align: start;
   line-height: 1;
@@ -337,7 +361,20 @@ body {
   flex-direction: column;
   justify-content: center;
   transition: 0.2s ease-in-out all;
+  border-radius: 50px;
+  background: #f2f2f2;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
+
+.selected {
+}
+.service-card:nth-child(2) {
+  background-color: var(--clr-ac1);
+}
+.service-card:nth-child(2) a {
+  background: #fff;
+}
+
 .service-card:hover {
   transform: translateY(-19px);
   background-image: linear-gradient(60deg, var(--clr1), var(--clr-ac2));
@@ -347,6 +384,8 @@ body {
 }
 .service-card a {
   text-decoration: none;
+  font-size: 500;
+
   color: var(--clr-ac8);
   padding: var(--size-10) var(--size-16);
   background-image: linear-gradient(
@@ -358,11 +397,12 @@ body {
 }
 
 .testimonials {
+    min-height: 100vh;
   padding: var(--gap2);
   margin-top: var(--gap4);
 }
 .testimonials-title {
-font-family: var(--font-title);
+  font-family: var(--font-title);
   font-size: clamp(var(--size-28), 8vw, var(--size-3r));
   font-weight: 400;
   text-align: start;
@@ -502,4 +542,112 @@ font-family: var(--font-title);
   padding-top: 1.5rem;
   color: #777;
   font-size: 0.9rem;
+}
+
+/* Partners / clients section */
+.partners {
+  padding: 3.5rem 1rem;
+  background: linear-gradient(
+    180deg,
+    rgba(244, 244, 250, 0.6),
+    rgba(255, 255, 255, 0.98)
+  );
+}
+.partners .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.partners-title {
+  font-family: var(--font-title, "Montserrat", sans-serif);
+  font-weight: 700;
+  font-size: clamp(1.2rem, 2.8vw, 1.65rem);
+  text-align: center;
+  margin-bottom: 1.4rem;
+  color: var(--cl1);
+}
+
+/* Grid: 6 columns on large, 4 on medium, 2 on small */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1.6rem 2.2rem;
+  align-items: center;
+  justify-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 1rem;
+}
+
+/* Partner item */
+.partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem;
+  transition: transform 0.28s cubic-bezier(0.2, 0.9, 0.3, 1), filter 0.28s ease;
+  border-radius: 8px;
+}
+
+/* Logo image styling:
+   - keep width limited, preserve aspect
+   - apply filter to make colorful logos neutral (optional)
+*/
+.partner img {
+  display: block;
+  width: auto;
+  max-width: 180px; /* tweak per design */
+  height: auto;
+  filter: grayscale(100%) brightness(0.9) contrast(0.95);
+  opacity: 0.9;
+  transition: filter 0.28s ease, opacity 0.28s ease, transform 0.28s ease;
+}
+
+/* Hover: reveal brand color (if SVG inline or separate colored file) */
+.partner:hover img,
+.partner:focus-within img {
+  transform: translateY(-6px);
+  filter: none;
+  opacity: 1;
+}
+
+/* Small note under grid */
+.partners-note {
+  text-align: center;
+  color: var(--clr8);
+  margin-top: 0.8rem;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1100px) {
+  .partners-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .partner img {
+    max-width: 140px;
+  }
+}
+@media (max-width: 720px) {
+  .partners-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .partners {
+    padding: 2.2rem 0.8rem;
+  }
+  .partner img {
+    max-width: 120px;
+  }
+}
+@media (max-width: 420px) {
+  .partners-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .partner {
+    padding: 0.5rem 0;
+  }
+  .partners-title {
+    font-size: 1.15rem;
+  }
 }
