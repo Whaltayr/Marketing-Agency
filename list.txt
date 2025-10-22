@@ -1,0 +1,20 @@
+dominio
+ssl
+hospedagem
+
+desing
+contrução
+teste
+
+deploy
+structure
+/landing-client
+ ├── index.html
+ ├── style.css
+ ├── assets/
+ │    ├── imagens/
+ │    └── ícones/
+ ├── sitemap.xml
+ └── robots.txt
+
+objectivo- alta conversão

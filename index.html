@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home </title>
+    <meta name="description" content="Landing page moderna para [Nome do Cliente], com WhatsApp direto.">
+    <meta name="keywords" content="Angola, WhatsApp, Landing Page, Serviços">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="assets/imagens/" as="image">
+    <!-- GSAP -->
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js" defer></script>
+    <script src="nav.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a class="logo">Logo</a>
+                <button class="navbar-toggle">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </button>
+                <ul class="navbar-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Serviços</a></li>
+
+                    <li><a class="cta-link" href="#">Fale Conosco</a></li>
+                </ul>
+
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Transforme seguidores em <span>clientes reais</span> todos os dias</h1>
+                <h2>Gestão estratégica de redes sociais, anúncios e SEO que colocam sua marca no topo sem desperdício,
+                    só resultados.</h2>
+                <a href="#">Solicitar Orçamento</a>
+            </div>
+            <div class="hero-image"><img src="assets/img/hero.png" alt="Hero image man holding a smartphone">
+                <img class="hero-image-icons icon-hero1" src="assets/icon/instagram-svgrepo-com.svg" alt="">
+                <img class="hero-image-icons icon-hero2" src="assets/icon/facebook-1-svgrepo-com.svg" alt="">
+                <img class="hero-image-icons icon-hero3" src="assets/icon/pinterest-svgrepo-com.svg" alt="">
+                <img class="hero-image-icons icon-hero4" src="assets/icon/tiktok-svgrepo-com.svg" alt="">
+
+            </div>
+        </section>
+        <section class="numbers"></section>
+        <!-- <section class="about"></section> -->
+        <section class="advantages">
+            <div class="advantages-wrapper">
+                <!-- <h3 class="advantages-tit">Vantagens</h3> -->
+                <div class="card-advantage">
+                    <div class="advantage-card-group">
+                        <img src="assets/icon/team-svgrepo-com.svg" alt="">
+                        <h3>Equipa Profissional</h3>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card-advantage">
+                    <div class="advantage-card-group">
+                        <img src="assets/icon/customize-svgrepo-com.svg" alt="">
+                        <h3>Customização</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi cupiditate illum iure.</p>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <h1 class="services-title">Nos oferecemos os melhores Serviços para os nossos clientes</h1>
+            <div class="services-wrapper">
+
+                <article class="service-card">
+                    <img src="assets/icon/shield-svgrepo-com.svg" alt="Gestão de redes sociais">
+                    <h2 class="service-card-title">Gestão de Redes Sociais</h2>
+                    <p class="service-card-title">Criamos conteúdo estratégico e envolvente que transforma seguidores em
+                        clientes fiéis.</p>
+                    <a href="#">Saiba mais</a>
+                </article>
+
+                <article class="service-card">
+                    <img src="assets/icon/search-alt-2-svgrepo-com.svg" alt="SEO e tráfego orgânico">
+                    <h2 class="service-card-title">SEO e Tráfego Orgânico</h2>
+                    <p class="service-card-desc">Otimizamos o seu site para aparecer no topo do Google e atrair
+                        visitantes qualificados todos os
+                        dias.</p>
+                    <a href="#">Ver detalhes</a>
+                </article>
+
+                <article class="service-card">
+                    <img src="assets/icon/award-ui-web-svgrepo-com.svg" alt="Branding e identidade visual">
+                    <h2 class="service-card-title">Branding e Identidade Visual</h2>
+                    <p class="service-card-desc">Construímos uma imagem forte e memorável para a sua marca, aumentando
+                        reconhecimento e confiança.
+                    </p>
+                    <a href="#">Explorar serviço</a>
+                </article>
+
+                <article class="service-card">
+                    <img src="assets/icon/team-svgrepo-com.svg" alt="Gestão de anúncios online">
+                    <h2 class="service-card-title">Anúncios Online (Meta & Google)</h2>
+                    <p class="service-card-desc">Campanhas inteligentes e otimizadas que geram resultados reais — mais
+                        leads, vendas e
+                        visibilidade.</p>
+                    <a href="#">Começar agora</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- <section class="faq"></section> -->
+        <section class="testimonials">
+            <h2 class="testimonials-title">O que dizem nossos clientes</h2>
+            <div class="testimonials-wrapper">
+
+                <article class="testimonial-card">
+                    <img src="assets/img/client1.jpg" alt="Foto de cliente 1">
+                    <div class="testimonial-card-content">
+                        <h4>Mariana Lopes</h4>
+                        <p class="client-role">Fundadora da Loja BellaLux</p>
+                        <p class="testimonial-text">“Em apenas 2 meses, nossas vendas online cresceram 180%. A equipe
+                            domina
+                            marketing digital e entende o comportamento do cliente como ninguém.”</p>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <img src="assets/img/client2.jpg" alt="Foto de cliente 2">
+                    <div class="testimonial-card-content">
+                        <h4>João Pereira</h4>
+                        <p class="client-role">Diretor da Clínica Visão+</p>
+                        <p class="testimonial-text">“Graças ao trabalho de branding e anúncios, dobramos o número de
+                            consultas mensais. Atendimento profissional e resultados reais.”</p>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <img src="assets/img/client4.jpg" alt="Foto de cliente 3">
+                    <div class="testimonial-card-content">
+                        <h4>Sara Andrade</h4>
+                        <p class="client-role">CEO da Moda Urbana</p>
+                        <p class="testimonial-text">“O site ficou incrível, rápido e otimizado. O SEO colocou nossa
+                            marca
+                            entre os primeiros resultados do Google. Vale cada centavo.”</p>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <img src="assets/img/client5.jpg" alt="Foto de cliente 4">
+                    <div class="testimonial-card-content">
+                        <h4>Pedro Gonçalves</h4>
+                        <p class="client-role">Cofundador da StartUp Nexa</p>
+                        <p class="testimonial-text">“O nível de estratégia e design é impressionante. O time entende de
+                            performance, mas também entrega estética e experiência de usuário.”</p>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <img src="assets/img/client3.jpg" alt="Foto de cliente 5">
+                    <div class="testimonial-card-content">
+                        <h4>Luísa Cardoso</h4>
+                        <p class="client-role">Gerente de Marketing na BioFit</p>
+                        <p class="testimonial-text">“Transformaram nossas redes sociais em uma máquina de gerar
+                            clientes.
+                            Hoje temos uma comunidade fiel e engajada.”</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="cta-section"></section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2 class="footer-logo">Logo</h2>
+                <p>Transformamos presença digital em resultados reais. Estratégia, design e tecnologia para fazer sua
+                    marca brilhar.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram"><img src="assets/icon/instagram-svgrepo-coml.svg" alt=""></a>
+                    <a href="#" aria-label="Facebook"><img src="assets/icon/facebook-svgrepo-com.svg" alt=""></a>
+                    <a href="#" aria-label="LinkedIn"><img src="assets/icon/linkedin-svgrepo-com.svg" alt=""></a>
+                    <a href="#" aria-label="WhatsApp"><img src="assets/icon/whatsapp.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Serviços</h3>
+                <ul>
+                    <li><a href="#">Gestão de Redes Sociais</a></li>
+                    <li><a href="#">SEO e Otimização</a></li>
+                    <li><a href="#">Branding</a></li>
+                    <li><a href="#">Anúncios Online</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Empresa</h3>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h3>Fale Conosco</h3>
+                <p>Quer impulsionar sua marca? Envie uma mensagem e receba um orçamento gratuito.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu email" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Nebula Marketing. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
